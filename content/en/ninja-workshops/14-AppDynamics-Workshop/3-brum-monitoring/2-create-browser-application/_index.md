@@ -11,15 +11,8 @@ In this exercise you will complete the following tasks:
 *   Create the Browser Application in the Controller.
 *   Configure the Browser Application.
 
-## Login to your controller
-
-Use the URL below to login to your controller from your web browser.
-
-``` bash
-http://[controller-vm-ip-address]:8090
-```
-
-![Controller Login Screen](images/controller-login.png)
+## Login to the Controller
+Log into the [AppDynamics SE Lab Controller](https://se-lab.saas.appdynamics.com/controller/) using your Cisco credentials.
 
 ## Create the Browser Application in the Controller
 

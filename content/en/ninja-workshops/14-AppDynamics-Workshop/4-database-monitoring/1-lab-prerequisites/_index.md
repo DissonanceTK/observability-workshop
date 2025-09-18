@@ -5,10 +5,8 @@ weight: 1
 description: In this exercise you will access your Splunk AppDynamics controller, verify transaction load to the application, and restart the application and transaction load if necessary.
 ---
 
-## Login to your controller
-Use the URL below to login to your controller from your web browser. Use your Cisco single sign on to login.
-
-[Splunk AppDynamics SE Lab](https://se-lab.saas.appdynamics.com/controller/)
+## Login to the Controller
+Log into the [AppDynamics SE Lab Controller](https://se-lab.saas.appdynamics.com/controller/) using your Cisco credentials.
 
 ## Verify transaction load to the application
 Check the application flow map:

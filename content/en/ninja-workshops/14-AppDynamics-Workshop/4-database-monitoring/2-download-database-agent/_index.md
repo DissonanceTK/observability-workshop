@@ -7,10 +7,8 @@ description: In this exercise you will access your AppDynamics Controller from y
 
 In this exercise you will access your AppDynamics Controller from your web browser and download the Database Visibility agent from there.
 
-## Login to your controller
-Use the URL below to login to your controller from your web browser. Use your Cisco single sign on to login.
-
-[Splunk AppDynamics SE Lab](https://se-lab.saas.appdynamics.com/controller/)
+## Login to the Controller
+Log into the [AppDynamics SE Lab Controller](https://se-lab.saas.appdynamics.com/controller/) using your Cisco credentials.
 
 ## Navigate to the Getting Started Wizard.
 
@@ -39,6 +37,3 @@ Save the Database Visibility Agent file to your local file system.
 Your browser should prompt you to save the agent file to your local file system, similar to the following image(depending on your OS).
 
 ![Save](images/03-download-wizard-04.png)
-
-## Next 
-We’ll install the Database Visibility Agent.

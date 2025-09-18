@@ -9,13 +9,8 @@ Follow the steps seen below until you get to the Select the agent type for downl
 
 The advantage to using the Option 1 is that the agent will be pre-configured to connect to your controller VS using Option 2 will require that you edit the configuration of the agent to connect to the controller.
 
-## Login to your controller
-
-Use the URL below to login to your controller from your web browser. Use your Cisco credentials for single sign on.
-
-```bash
-https://se-lab.saas.appdynamics.com/
-```
+## Login to the Controller
+Log into the [AppDynamics SE Lab Controller](https://se-lab.saas.appdynamics.com/controller/) using your Cisco credentials.
 
 ## Navigate to the Getting Started Wizard
 

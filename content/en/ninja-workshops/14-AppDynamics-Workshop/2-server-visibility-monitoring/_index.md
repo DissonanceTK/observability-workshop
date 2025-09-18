@@ -1,7 +1,7 @@
 ---
 title: Server Visibility Monitoring
 time: 2 minutes
-weight: 1
+weight: 2
 description: In this Lab you learn about AppDynamics Server Visibility Monitoring and Service Availability Monitoring.
 ---
 
@@ -19,12 +19,11 @@ When you have completed this lab, you will be able to:
 ## Workshop Environment
 The lab environment has two hosts:
 
-- The first host is where you installed the AppDynamics Platform and runs the AppDynamics Controller and will be referred to from this point on as the Controller VM.
+- The first host runs the AppDynamics Controller and will be referred to from this point on as the Controller.
 - The second host runs the Supercar Trader application used in the labs. It will be the host where you will install the AppDynamics agents and will be referred to from this point on as the Application VM.
 
 ## Controller
-You will be using the AppDynamics SE Lab Controller for this workshop. 
-[AppDynamics SE Lab](https://se-lab.saas.appdynamics.com/controller/)
+You will be using the [AppDynamics SE Lab Controller](https://se-lab.saas.appdynamics.com/controller/) for this workshop.
 
 ![Controller](images/controller-vm.png)
 

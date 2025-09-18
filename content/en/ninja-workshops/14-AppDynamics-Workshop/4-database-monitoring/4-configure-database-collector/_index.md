@@ -15,15 +15,8 @@ In this exercise you will perform the following tasks:
 - Configure a Database Collector in the Controller
 - Confirm the Database Collector is collecting data
 
-In the example URL below, substitute the IP Address or fully qualified domain name of your Controller VM.
-
-Example Controller URL for browser:
-
-```bash
-http://[controller-vm-ip-address]:8090
-```
-
-![Controller Login](images/controller-login.png)
+## Login to the Controller
+Log into the [AppDynamics SE Lab Controller](https://se-lab.saas.appdynamics.com/controller/) using your Cisco credentials.
 
 ## Configure a Database Collector in the Controller
 
@@ -76,5 +69,3 @@ _Note: It may take up to 18 minutes from the time you configure your collector t
 ![Application](images/05-db-dashboard-05.png)
 
 You can read more about configuring Database Collectors [here](https://docs.appdynamics.com/appd/23.x/latest/en/database-visibility/add-database-collectors) and [here](https://docs.appdynamics.com/appd/23.x/latest/en/database-visibility/add-database-collectors/configure-mysql-collectors)
-
-Next we’ll monitor and troubleshoot Database issues

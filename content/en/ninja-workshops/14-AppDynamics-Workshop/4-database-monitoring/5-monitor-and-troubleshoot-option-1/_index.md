@@ -102,6 +102,3 @@ This report displays the wait times for the top (10, 50, 100, 200) queries. This
 You can read more about the Reports in the Database Activity Window [here](https://docs.appdynamics.com/appd/23.x/latest/en/database-visibility/monitor-databases-and-database-servers/monitor-database-performance/database-activity-window)
 
 ![Query Wait State Report](images/06-db-dashboard-06.png)
-
-Next we’ll continue to monitor and troubleshoot Database issues
-

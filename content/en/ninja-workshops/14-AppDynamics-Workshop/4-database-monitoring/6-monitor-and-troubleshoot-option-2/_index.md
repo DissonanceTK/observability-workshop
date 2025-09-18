@@ -83,7 +83,3 @@ You can read more about the Database Query Execution Plan dashboard [here](https
 The expensive query you looked at is joining across three tables and could benefit from an index for each column in each join. The MANUFACTURER_ID column needs an index created for it to improve the performance of any queries on the table.
 
 ![Troubleshoot Expensive Query](images/07-db-dashboard-07.png)
-
-You have now completed this lab!
-
-Next we’ll start the Business iQ lab.

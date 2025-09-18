@@ -10,15 +10,8 @@ Analytics formerly required a separate agent that was bundled with Machine Agent
 
 In this exercise you will access your AppDynamics Controller from your web browser and enable the Agentless Analytics from there.
 
-## Login to your controller
-
-Use the URL below to login to your controller from your web browser.
-
-```bash
-http://[controller-vm-ip-address]:8090
-```
-
-![Controller Login Screen](images/controller-login.png)
+## Login to the Controller
+Log into the [AppDynamics SE Lab Controller](https://se-lab.saas.appdynamics.com/controller/) using your Cisco credentials.
 
 ## Navigate to the Analytics Configuration
 
