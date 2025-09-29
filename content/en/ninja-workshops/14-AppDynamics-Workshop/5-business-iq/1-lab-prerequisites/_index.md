@@ -10,15 +10,8 @@ In this exercise you will complete the following tasks:
 *   Verify transaction load to the application.
 *   Restart the application and transaction load if needed.
 
-## Login to your controller
-
-Use the URL below to login to your controller from your web browser.
-
-``` bash
-http://[controller-vm-ip-address]:8090
-```
-
-![Controller Login Screen](images/controller-login.png)
+## Login to the Controller
+Log into the [AppDynamics SE Lab Controller](https://se-lab.saas.appdynamics.com/controller/) using your Cisco credentials.
 
 ## Verify transaction load to the application
 
