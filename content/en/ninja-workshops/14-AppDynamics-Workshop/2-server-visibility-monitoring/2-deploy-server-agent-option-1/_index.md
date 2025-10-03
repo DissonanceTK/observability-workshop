@@ -3,7 +3,12 @@ title: Deploy Server Agent - Option 1
 time: 2 minutes
 weight: 2
 description: Depending on the version of the AppDynamics Controller you are using, you may or may not be able download the Server Visibility agent from the Controller as shown here for Option 1.
+draft: true
 ---
+
+{{% notice title="Prerequsites" style="primary"  icon="lightbulb" %}}
+This is a continuation of the Application Performance Monitoring lab. Verify that your application is running and has load for the past hour. If needed return to the generate-application-load section to restart the load generator. 
+{{% /notice %}}
 
 Follow the steps seen below until you get to the Select the agent type for download section and if you do not see the Servers tile then you will need to use the Deploy Server Agent - Option 2 approach.
 

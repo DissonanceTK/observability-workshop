@@ -18,39 +18,32 @@ Log into the [AppDynamics SE Lab Controller](https://se-lab.saas.appdynamics.com
 
 Check the application flow map:
 
-**1.** Select the **last 1 hour** time frame.
+1. Select the **last 1 hour** time frame.
+2. Verify you see the five different Tiers on the flow map.
+3. Verify there has been consistent load over the last 1 hour.
 
-**2.** Verify you see the five different Tiers on the flow map.
-
-**3.** Verify there has been consistent load over the last 1 hour.
-
-![Verify Load 1](images/verify-app-load-01.png)
+![Verify Load 1](images/01-prereque-appload.png)
 
 Check the list of business transactions:
 
-**1.** Click the **Business Transactions** option on the left menu.
-
-**2.** Verify you see the eleven business transactions seen below.
-
-**3.** Verify that they have some number of calls during the last hour.
+4. Click the **Business Transactions** option on the left menu.
+5. Verify you see the eleven business transactions seen below.
+6. Verify that they have some number of calls during the last hour.
 
 **Note:** If you don’t see the **Calls** column, you can click the **View Options** toolbar button to show that column.
 
-![Verify Load 2](images/verify-app-load-02.png)
+![Verify Business transactions](images/01-prereq-bts.png)
 
 Check the agent status for the Nodes:
 
-**1.** Click the **Tiers & Nodes** option on the left menu.
+7. Click the **Tiers & Nodes** option on the left menu.
+8. Click **Grid View**.
+9. Verify that the **App Agent Status** for each Node is greater than 90% during the last hour.
 
-**2.** Click **Grid View**.
+![Verify Agents](images/01-prereq-tiersnodes.png)
 
-**3.** Verify that the **App Agent Status** for each Node is greater than 90% during the last hour.
 
-![Verify Load 3](images/verify-app-load-03.png)
-
-  
-
-## Restart the application and transaction load if needed
+## Restart the Application and Load Generation if Needed
 
 If any of the checks you performed in the previous steps could not be verified, SSH into your **Application VM** and follow these steps to restart the application and transaction load.
 
@@ -90,35 +83,18 @@ sudo pkill -f Supercar-Trader
 {{% /tab %}}
 {{< /tabs >}}
 
-Use the following commands to stop the load generation for the application.
-
-{{< tabs >}}
-{{% tab title="Command" %}}
+Use the following commands to stop the load generation for the application. Wait until all processes are stopped. 
 
 ``` bash
 cd /opt/appdynamics/lab-artifacts/phantomjs
 ./stop_load.sh
 ```
 
-{{% /tab %}}
-{{< /tabs >}}
-
-You should see output similar to the following image.
-
-![Restart App 2](images/restart-app-and-load-02.png)
-
-Now use the following commands to start Apache Tomcat.
-
-{{< tabs >}}
-{{% tab title="Command" %}}
-
+Restart the Tomcat server:
 ``` bash
 cd /usr/local/apache/apache-tomcat-9/bin
 ./startup.sh
 ```
-
-{{% /tab %}}
-{{< /tabs >}}
 
 Wait for two minutes and use the following command to ensure Apache Tomcat is running on port 8080.
 
@@ -132,16 +108,10 @@ You should see output similar to the following image showing that port 8080 is i
 
 Use the following commands to start the load generation for the application.
 
-{{< tabs >}}
-{{% tab title="Command" %}}
-
 ``` bash
 cd /opt/appdynamics/lab-artifacts/phantomjs
 ./start_load.sh
 ```
-
-{{% /tab %}}
-{{< /tabs >}}
 
 You should see output similar to the following image.
 

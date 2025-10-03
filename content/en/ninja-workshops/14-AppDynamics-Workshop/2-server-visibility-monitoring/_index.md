@@ -5,8 +5,12 @@ weight: 2
 description: In this Lab you learn about AppDynamics Server Visibility Monitoring and Service Availability Monitoring.
 ---
 
+{{% notice title="Prerequsites" style="primary"  icon="lightbulb" %}}
+This is a continuation of the Application Performance Monitoring lab. Verify that your application is running and has load for the past hour. If needed return to the Generate Application Load section to restart the load generator. 
+{{% /notice %}}
+
 ## Objectives 
-In this Lab you learn about AppDynamics Server Visibility Monitoring and Service Availability Monitoring.
+In this Lab you will learn about AppDynamics Server Visibility Monitoring and Service Availability Monitoring.
 
 When you have completed this lab, you will be able to:
 

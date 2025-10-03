@@ -24,10 +24,54 @@ You should be able to see the home page of the Supercar Trader application.
 
 SSH into your ec2 instance and start the load generation. It may take a few minutes for all the scripts to run. 
 
+{{< tabs >}}
+{{% tab title="Command" %}}
 ``` bash
 cd /opt/appdynamics/lab-artifacts/phantomjs
 ./start_load.sh
 ```
+{{% /tab %}}
+{{% tab title="Example Output" %}}
+``` bash
+Cleaning up artifacts from previous load...
+Starting home-init-01
+Waiting for additional JVMs to initialize... 1
+Waiting for additional JVMs to initialize... 2
+Waiting for additional JVMs to initialize... 3
+Waiting for additional JVMs to initialize... 4
+Waiting for additional JVMs to initialize... 5
+Waiting for additional JVMs to initialize... 6
+Waiting for additional JVMs to initialize... 7
+Waiting for additional JVMs to initialize... 8
+Waiting for additional JVMs to initialize... 9
+Waiting for additional JVMs to initialize... 10
+Waiting for additional JVMs to initialize... 11
+Waiting for additional JVMs to initialize... 12
+Waiting for additional JVMs to initialize... 13
+Waiting for additional JVMs to initialize... 14
+Waiting for additional JVMs to initialize... 15
+Waiting for additional JVMs to initialize... 16
+Waiting for additional JVMs to initialize... 17
+Waiting for additional JVMs to initialize... 18
+Waiting for additional JVMs to initialize... 19
+Waiting for additional JVMs to initialize... 20
+Starting slow-query-01
+Starting slow-query-02
+Starting slow-query-03
+Starting slow-query-04
+Starting sessions-01
+Starting sessions-02
+Starting sell-car-01
+Starting sell-car-02
+Starting sessions-03
+Starting sessions-04
+Starting search-01
+Starting request-error-01
+Starting mem-leak-insurance
+Finished starting load generator scripts                                                                100%   22MB 255.5KB/s   01:26
+```
+{{% /tab %}}
+{{< /tabs >}}
 
 ## Confirm transaction load in the Controller
 

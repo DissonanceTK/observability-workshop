@@ -3,6 +3,7 @@ title: Lab Prerequisites
 time: 2 minutes
 weight: 1
 description: In this exercise you will access your Splunk AppDynamics controller, verify transaction load to the application, and restart the application and transaction load if necessary.
+draft: true
 ---
 
 ## Login to the Controller

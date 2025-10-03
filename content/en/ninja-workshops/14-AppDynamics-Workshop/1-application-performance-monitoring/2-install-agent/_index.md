@@ -14,7 +14,7 @@ In this exercise you will perform the following actions:
 ## Upload Java Agent to Application VM
 By this point you should have received the information regarding the EC2 instance that you will be using for this workshop. Ensure you have the IP address of your EC2 instance, username and password required to ssh into the instance .
 
-On your local machine, open a terminal window and change into the directory where the java agent file was downloaded to. Use SCP to upload the file into the EC2 instance using the following command. This may take some time to complete.
+On your local machine, open a terminal window and change into the directory where the java agent file was downloaded to. Upload the file into the EC2 instance using the following command. This may take some time to complete.
 
 * Update the IP address or public DNS for your instance.
 * Update the filename to match your exact version.
@@ -22,7 +22,7 @@ On your local machine, open a terminal window and change into the directory wher
 {{< tabs >}}
 {{% tab title="Command" %}}
 ``` bash
-cd Downloads
+cd ~/Downloads
 scp -P 2222 AppServerAgent-22.4.0.33722.zip splunk@i-0b6e3c9790292be66.splunk.show:/home/splunk
 ```
 {{% /tab %}}

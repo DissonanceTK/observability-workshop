@@ -15,47 +15,56 @@ In this exercise you will complete the following tasks:
 
 ## Review the Server Main Dashboard
 
-Now that you have the Server Visibility Monitoring agent installed, let’s take a look at some of the features available in the Server Visibility module.
+Now that you have the Machine agent installed, let’s take a look at some of the features available in the Server Visibility module. From your **Application Dashboard**, click on the **Servers** tab and drill into the servers main dashboard by following these steps.
 
-Navigate to the Servers list dashboard and drill into the servers main dashboard by following these steps.
+1. Click the **Servers** tab on the left menu.
+2. Check the **checkbox** on the left for your server.
+3. Click **View Details**.
 
-1. Click the Servers tab on the top menu.
-2. Check the checkbox on the left for the first server.
-3. Click View Details.
+![Server Dashboard](images/svm-viewDetails.png)
 
-You can read more about the Servers List dashboard here.
+You can now explore the server dashboard. This dashboard enables you to perform the following tasks:
 
-![Server Health](images/svm-dashboard-01.png)
+See charts of key performance metrics for the selected monitored servers, including:  
+-  Server availability
+- CPU, memory, and network usage percentages
+- Server properties
+- Disk, partition, and volume metrics
+- Top 10 processes consuming CPU resources and memory.
 
-You can now explore the server main dashboard. This dashboard enables you to perform the following tasks:
+You can read more about the Server Main dashboard [here](https://help.splunk.com/en/appdynamics-saas/infrastructure-visibility/25.7.0/server-visibility/monitor-your-servers-using-server-visibility/server-dashboard).
 
-- See charts of key performance metrics for the selected monitored servers, including:
-    -  Server availability
-    - CPU, memory, and network usage percentages
-    - Server properties
-    - Disk, partition, and volume metrics
-    - Top 10 processes consuming CPU resources and memory.
+Review the **Top Pane** of the dashboard which provides you the following information:
+- Host Id: This is an ID for the server that is unique to the Splunk AppDynamics Controller
+- Health: Shows the overall health of the server. 
+- Hierachy: Arbitrary hierarchy to group your severs together. See documentation for additional details [here](https://help.splunk.com/en/appdynamics-saas/infrastructure-visibility/25.7.0/machine-agent/configure-the-machine-agent/machine-agent-configuration-properties)
 
-- Change the time period of the metrics displayed.
-- See an assessment of the overall health of the server, as determined by whether any health rules have been violated.
-- View Health Rule Status in the UI.
-- See the hierarchy or grouping of the server as specified in the controller-info.xml file using the machine-path configuration property.
-- Click on any point on a chart to see the metric value for that time.
-- Find and switch to other Server Dashboards (pull-down menu next to server tier, top left).
-- View an aggregate of the top 10 processes by CPU usage, and top 10 processes by memory.
+1. Click on the health server icon to view the **Violations * Anomalies** panel. Review the panel to identify potential issues
+2. Click on the **Current Health Rule Evaluation Status** to see if there are any current issues being alerted on for this server 
 
-You can read more about the Server Main dashboard [here](https://docs.appdynamics.com/appd/23.x/latest/en/infrastructure-visibility/server-visibility/monitor-your-servers-using-server-visibility/server-dashboard).
+![Server Health](images/server-health.png)
+![Server violations](images/server-health-violations.png)
 
-![Dashboard Example](images/svm-dashboard-02.png)
-![Dashboard Example](images/svm-dashboard-03.png)
+3. Click on the **CPU Usage too high** rule 
+4. Click on **Edit Health Rule**. This will open the **Edit Health Rule** panel
+
+![Edit Health Rule](images/server-edit-hr.png)
+
+This panel gives us the ability to configure the Health Rule. A different lab will go into more details on creating and customizing health rules. For now we will just review the existing rule
+
+5. Click on the **Warning Criteria** 
+
+![Edit Health Rule - Warning](images/server-warning.png)
+
+In this example we can see that the warning criteria is set when the CPU is above 5%. This is the reason why our health rule is showing a warning and not a healthy state. Cancel out of the **Edit Health Rule** panel to get back to the **Server Dashboard**
+
 
 ## Review the Server Processes Dashboard
 
-1. Click the Processes tab.
-2. Click View Options to select different data columns.
+1. Click the **Processes** tab.
+2. Click **View Options** to select different data columns. Review the KPIs available to view 
 
 You can now explore the server processes dashboard. This dashboard enables you to perform the following tasks:
-
 - View all the processes active during the selected time period. The processes are grouped by class as specified in the ServerMonitoring.yml file.
 - View the full command line that started this process by hovering over the process entry in the Command Line column.
 - Expand a process class to see the processes associated with that class.
@@ -64,30 +73,30 @@ You can now explore the server processes dashboard. This dashboard enables you t
 - Sort the chart using the columns as a sorting key. You can not sort on sparkline charts: CPU Trend and Memory Trend.
 - See CPU and Memory usage trends at a glance.
 
-You can read more about the Server Processes dashboard [here](https://docs.appdynamics.com/appd/23.x/latest/en/infrastructure-visibility/server-visibility/monitor-your-servers-using-server-visibility/server-process-metrics).
+You can read more about the Server Processes dashboard [here](https://help.splunk.com/en/appdynamics-saas/infrastructure-visibility/25.7.0/server-visibility/monitor-your-servers-using-server-visibility/server-process-metrics).
 
-![Dashboard Exampe](images/svm-dashboard-04.png)
+![Dashboard Processes](images/server-process-dashboard.png)
 
 ## Review the Server Volumes Dashboard
 
-1. Click the Volumes tab.
+1. Click the **Volumes** tab.
 
 You can now explore the server volumes dashboard. This dashboard enables you to perform the following tasks:
 
-- See in the list of volumes, the percentage used and total storage space available on the disk, partition or volume.
+- See the list of volumes, the percentage used and total storage space available on the disk, partition or volume.
 - See disk usage and I/O utilization, rate, operations per second, and wait time.
 - Change the time period of the metrics collected and displayed.
 - Click on any point on a chart to see the metric value for that time.
 
-You can read more about the Server Volumes dashboard [here](https://docs.appdynamics.com/appd/23.x/latest/en/infrastructure-visibility/server-visibility/monitor-your-servers-using-server-visibility/server-volumes-metrics).
+You can read more about the Server Volumes dashboard [here](https://help.splunk.com/en/appdynamics-saas/infrastructure-visibility/25.7.0/server-visibility/monitor-your-servers-using-server-visibility/server-volumes-metrics).
 
-![Dashboard Example](images/svm-dashboard-05.png)
+![Dashboard Example](images/server-volumes.png)
 
 ## Review the Server Network Dashboard
 
 1. Click the Network tab.
 
-You can now explore the server network dashboard. This dashboard enables you to perform the following tasks:
+You can now explore the **Server Network** dashboard. This dashboard enables you to perform the following tasks:
 
 - See the MAC, IPv4, and IPv6 address for each network interface.
 - See whether or not the network interface is enabled, functional, its operational state equipped with an ethernet cable that is plugged in, operating in full or half-full duplex mode, maximum transmission unit (MTU) or size (in bytes) of the largest protocol data unit that the network interface can pass, speed of the ethernet connection in Mbit/sec.
@@ -95,39 +104,6 @@ You can now explore the server network dashboard. This dashboard enables you to 
 - Change the time period of the metrics displayed.
 - Hover over on any point on a chart to see the metric value for that time.
 
-You can read more about the Server Network dashboard [here](https://docs.appdynamics.com/appd/23.x/latest/en/infrastructure-visibility/server-visibility/monitor-your-servers-using-server-visibility/server-network-metrics).
+You can read more about the Server Network dashboard [here](https://help.splunk.com/en/appdynamics-saas/infrastructure-visibility/25.7.0/server-visibility/monitor-your-servers-using-server-visibility/server-network-metrics).
 
-![Dashboard Example](https://docs.appdynamics.com/appd/23.x/latest/en/infrastructure-visibility/server-visibility/monitor-your-servers-using-server-visibility/server-network-metrics)
-
-## Navigate between Server and Application Contexts
-
-The Server Visibility Monitoring agent automatically associates itself with any AppDynamics APM agents running on the same host.
-
-With Server Visibility enabled, you can access server performance metrics in the context of your applications. You can switch between server and application contexts in different ways. Follow these steps to navigate from the server main dashboard to one of the Nodes running on the server.
-
-1. Click the Dashboard tab.
-2. Click the APM Correlation link.
-
-![Dashboard Example](images/svm-dashboard-07.png)
-
-1. Click the down arrow on one of the listed Tiers.
-2. Click the Node of the Tier.
-3. Click Details.
-
-![Dashboard Example](images/svm-dashboard-08.png)
-
-You are now on the main Node dashboard.
-
-1. Click the Server tab to see the related host metrics
-
-![Dashboard Example](images/svm-dashboard-09.png)
-
-When you have the Server Visibility Monitoring agent installed, the host metrics are always available within the context of the related Node.
-
-You can read more about navigating between Server and Application Contexts [here](https://docs.appdynamics.com/appd/4.5.x/en/infrastructure-visibility/server-visibility/monitor-your-servers-using-server-visibility/navigating-between-server-and-application-contexts).
-
-![Dashboard Example](images/svm-dashboard-10.png)
-
-You have now completed this lab!
-
-
+![Network Dashboard](images/server-network.png)
